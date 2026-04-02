@@ -38,7 +38,7 @@ public class FinanceRecord {
     private String id;
 
     @Column(nullable = false)
-    private Long amount;
+    private Double amount;  /* store amount in rupees only */
 
     @Column(nullable = false, length = 100)
     private String category;
