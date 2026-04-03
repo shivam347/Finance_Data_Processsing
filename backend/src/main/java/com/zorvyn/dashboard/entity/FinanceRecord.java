@@ -1,9 +1,10 @@
 package com.zorvyn.dashboard.entity;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import org.hibernate.annotations.ManyToAny;
+
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -38,7 +39,7 @@ public class FinanceRecord {
     private String id;
 
     @Column(nullable = false)
-    private Double amount;  /* store amount in rupees only */
+    private BigDecimal amount;  /* store amount in rupees only */
 
     @Column(nullable = false, length = 100)
     private String category;
