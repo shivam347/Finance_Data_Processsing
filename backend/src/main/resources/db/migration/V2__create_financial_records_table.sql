@@ -9,5 +9,8 @@ CREATE TABLE financial_records (
     deleted_at  DATETIME     NULL,      -- for soft delete
     created_at  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE RESTRICT
+    FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE RESTRICT 
+    
 );
+
+
