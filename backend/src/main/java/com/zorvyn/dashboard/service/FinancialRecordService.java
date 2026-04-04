@@ -62,12 +62,12 @@ public class FinancialRecordService {
              * soft deleted user should also not be displayed, means exclude soft deleted
              * user
              */
-            pred.add(cb.isNull(root.get("deletedAt")));
+            pred.add(cb.isNull(root.get("deleteAt")));
 
             // Now check the user role , if role is viewer then it can only view its own
             // financial data
             if (Role.VIEWER.equals(user.getRole())) {
-                pred.add(cb.equal(root.get("created_by").get("id"), user.getId()));
+                pred.add(cb.equal(root.get("createdBy").get("id"), user.getId()));
             }
 
             /* Optional filters */
