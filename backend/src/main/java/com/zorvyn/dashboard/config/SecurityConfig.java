@@ -36,8 +36,8 @@ public class SecurityConfig {
 
     private final PasswordEncoder passwordEncoder;
 
-    @Value("${app.cors.allowed-origin:http://localhost:5173}")
-    private String allowedOrigin;
+    // @Value("${app.cors.allowed-origin:http://localhost:5173}")
+    // private String allowedOrigin;
 
     /*
      * When you try to login , spring does not know how to verify the user and where
@@ -89,7 +89,7 @@ public class SecurityConfig {
         configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000",
                 "http://localhost:5173",
                 "http://localhost:4200",
-                allowedOrigin));
+                "https://finance-data-processsing.vercel.app"));
         configuration.setAllowedMethods(List.of("GET", "POST", "DELETE", "PATCH", "PUT", "OPTIONS")); /*
                                                                                                        * Options are
                                                                                                        * used by the
