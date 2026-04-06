@@ -83,7 +83,8 @@ public class SecurityConfig {
         // ADD THE FRONTEND ORIGINS HERE
         configuration.setAllowedOrigins(List.of("http://localhost:3000",
                 "http://localhost:5173",
-                "http://localhost:4200"));
+                "http://localhost:4200",
+                "https://your-app-name.vercel.app"));
         configuration.setAllowedMethods(List.of("GET", "POST", "DELETE", "PATCH", "PUT", "OPTIONS")); /*
                                                                                                        * Options are
                                                                                                        * used by the
