@@ -84,6 +84,9 @@ Once the server is running, open the interactive Swagger UI:
 
 http://localhost:8080/swagger-ui.html
 
+Live Swagger Api Documentation Link:
+https://financedataprocesssing-production.up.railway.app/swagger-ui/index.html
+
 ### Default Admin Credentials
 ```
 Email:    admin@dashboard.com
